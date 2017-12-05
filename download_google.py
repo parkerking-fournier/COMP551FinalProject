@@ -4,7 +4,7 @@ import random
 import requests
 from datetime import datetime
 
-api_key = 'AIzaSyDc8eBVhaouyt_v3ml_cDUwMvnZiY9R4t0'
+api_key = 'Get an api_key from google cloud computing'
 
 
 gm = googlemaps.Client(key=api_key)
