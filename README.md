@@ -28,4 +28,19 @@ Now getting into the bulk of our code. Once you have downloaded the algorithm yo
         --input_dir /path/to/your/dataset \
         --checkpoint /path/to/your/pretrainedmodel/facades_BtoA
 
-Next we are going to do some processing of the input data 
+Next we are going to do some processing of our data to make sure its ready for the compNN algorithm. 
+First the datasets come of the form of a jpeg file [256, 512]. We just split the images into their own files where A = one on left , B = one on the right. Run the script (note you may have to go inside and change the script (sorry)
+
+        python split_train_images.py
+        
+Then finally to get the test images and training images in the form that you want run 
+
+        python parse_input_image.py
+        python parse_output_image.py
+ 
+Then you are ready to run the compNN.py algorithm
+Note it will take a long time.
+
+        python compNN.py
+ 
+ Enjoy!
